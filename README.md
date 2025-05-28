@@ -45,12 +45,3 @@ To analyze the sales data and derive meaningful business insights using various 
 - `Sales.csv`: Raw sales dataset.
 - `Sales_Analysis_Queries.sql`: Contains all SQL queries used for analysis.
 
-## 🧾 Sample Queries
-
-```sql
--- Top 5 cities with highest sales
-SELECT city, SUM(total_amount) AS total_sales
-FROM sales
-GROUP BY city
-ORDER BY total_sales DESC
-LIMIT 5;
